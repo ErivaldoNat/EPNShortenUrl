@@ -1,0 +1,101 @@
+
+
+.all{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.tete{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tete img{
+  width: 170px;
+  height: 100px;
+}
+
+.tete h1{
+  font-size: 40px;
+  color: #fff;
+
+}
+
+.tete span{
+  color: white;
+  font-size: 19px;
+  margin-top: 8px;
+  margin-bottom: 34px;
+}
+
+.Inp{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  background-color: grey;
+  border: 0;
+  border-radius: 8px;
+}
+.Input-area{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: Yscale 2s;
+}
+
+@keyframes Yscale{
+  from{
+    transform: translateY(90px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+  }
+
+.Inp input{
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  
+}
+
+.Inp input::placeholder{
+  color: white;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.Input-area button{
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  transition: transform 0.7s;
+  margin-bottom: 10px;
+}
+
+.Input-area button:hover{
+  transform: scale(1.10);
+}
+@media (max-width: 433px){
+  .tete img{
+    width: 10%;
+    height: 10%;
+  }
+}
+
+
+.description{
+  color: #d0d0d0;
+  text-align: center;
+}
+
